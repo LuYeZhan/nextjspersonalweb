@@ -329,9 +329,25 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const indexPage = props => __jsx("div", null, __jsx("h1", null, "The main Page of ", props.appName), __jsx("p", null, "Go to", __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/auth"
-}, __jsx("a", null, " Auth"))), __jsx("button", {
+const indexPage = props => __jsx("div", null, __jsx("h1", null, "The main Page of ", props.appName), __jsx("div", null, __jsx("p", null, "Go to", __jsx("a", {
+  href: "https://react-my-burger-75352.web.app/"
+}, " burger react app"))), __jsx("div", null, __jsx("p", null, "Go to", __jsx("a", {
+  href: "https://luyezhan.github.io/Natours/"
+}, " Natours html + css"))), __jsx("div", null, __jsx("p", null, "Go to", __jsx("a", {
+  href: "https://natours11api.herokuapp.com/"
+}, ' ', "Natours API Node.Js + PUG"))), __jsx("div", null, __jsx("p", null, "Go to", __jsx("a", {
+  href: "https://kiwi-me.firebaseapp.com/"
+}, ' ', "Kiwi hackaton React Hooks App with socket.io"))), __jsx("div", null, __jsx("p", null, "Go to", __jsx("a", {
+  href: "https://tomeu.herokuapp.com/"
+}, ' ', "Tomeu Node.Js express handlebar"))), __jsx("div", null, __jsx("p", null, "Go to", __jsx("a", {
+  href: "https://listenandtalk-a3074.firebaseapp.com/"
+}, ' ', "Listen and Talk MERN Stack social network using sound only"))), __jsx("div", null, __jsx("p", null, "Go to", __jsx("a", {
+  href: "https://luyezhan.github.io/team-7-xxxlutz/"
+}, ' ', "vanilla javascript + html + css, ironhack hackaton winning project"))), __jsx("div", null, __jsx("p", null, "Go to", __jsx("a", {
+  href: "https://luyezhan.github.io/Loveweb/"
+}, ' ', "tinder app created with vanilla Js"))), __jsx("div", null, __jsx("p", null, "Go to", __jsx("a", {
+  href: "https://luyezhan.github.io/Code-Invader//"
+}, ' ', "mi first game using canvas and vanilla js"))), __jsx("button", {
   onClick: () => next_router__WEBPACK_IMPORTED_MODULE_2___default.a.push('/auth')
 }, "Go to Auth"));
 
