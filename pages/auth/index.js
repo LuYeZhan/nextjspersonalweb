@@ -1,6 +1,6 @@
 import React from 'react';
 import Router from 'next/router';
-import User from '../../components/User';
+import User from '../../components/User/User';
 
 const authIndexPage = (props) => {
   return (

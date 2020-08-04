@@ -1,84 +1,62 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
+import classes from './index.module.css';
+import Project from '../components/Project/Project';
 
 const indexPage = (props) => (
   <div>
-    <h1>The main Page of {props.appName}</h1>
-    <div>
-      <p>
-        Go to
-        <a href='https://react-my-burger-75352.web.app/'> burger react app</a>
-      </p>
-    </div>
-    <div>
-      <p>
-        Go to
-        <a href='https://luyezhan.github.io/Natours/'> Natours html + css</a>
-      </p>
-    </div>
-    <div>
-      <p>
-        Go to
-        <a href='https://natours11api.herokuapp.com/'>
-          {' '}
-          Natours API Node.Js + PUG
-        </a>
-      </p>
-    </div>
-    <div>
-      <p>
-        Go to
-        <a href='https://kiwi-me.firebaseapp.com/'>
-          {' '}
-          Kiwi hackaton React Hooks App with socket.io
-        </a>
-      </p>
-    </div>
-    <div>
-      <p>
-        Go to
-        <a href='https://tomeu.herokuapp.com/'>
-          {' '}
-          Tomeu Node.Js express handlebar
-        </a>
-      </p>
-    </div>
-    <div>
-      <p>
-        Go to
-        <a href='https://listenandtalk-a3074.firebaseapp.com/'>
-          {' '}
-          Listen and Talk MERN Stack social network using sound only
-        </a>
-      </p>
-    </div>
-    <div>
-      <p>
-        Go to
-        <a href='https://luyezhan.github.io/team-7-xxxlutz/'>
-          {' '}
-          vanilla javascript + html + css, ironhack hackaton winning project
-        </a>
-      </p>
-    </div>
-    <div>
-      <p>
-        Go to
-        <a href='https://luyezhan.github.io/Loveweb/'>
-          {' '}
-          tinder app created with vanilla Js
-        </a>
-      </p>
-    </div>
-    <div>
-      <p>
-        Go to
-        <a href='https://luyezhan.github.io/Code-Invader//'>
-          {' '}
-          mi first game using canvas and vanilla js
-        </a>
-      </p>
+    <h1>{props.appName}'s personal page</h1>
+    <h2>Projects</h2>
+    <div className={classes.Container}>
+      <Project
+        url='https://react-my-burger-75352.web.app/'
+        description='My burger app, react, hooks, redux, firebase'
+        image='../assets/burger.jpg'
+        alt='burger project'
+      />
+      <Project
+        url='https://luyezhan.github.io/Natours/'
+        description='Natours html + css'
+        image='../assets/burger.jpg'
+        alt='natours front project'
+      />
+      <Project
+        url='https://natours11api.herokuapp.com/'
+        description='Natours API Node.Js + PUG'
+        image='../assets/burger.jpg'
+        alt='natours Api project'
+      />
+      <Project
+        url='https://kiwi-me.firebaseapp.com/'
+        description='Kiwi hackaton React Hooks App with socket.io'
+        image='../assets/burger.jpg'
+        alt='Kiwi project'
+      />
+      <Project
+        url='https://tomeu.herokuapp.com/'
+        description='Tomeu Node.Js express handlebar'
+        image='../assets/burger.jpg'
+        alt='Tomeu project'
+      />
+      <Project
+        url='https://listenandtalk-a3074.firebaseapp.com/'
+        description='Listen and Talk MERN Stack social network using sound only'
+        image='../assets/burger.jpg'
+        alt='listen & talk  project'
+      />
+      <Project
+        url='https://luyezhan.github.io/Loveweb/'
+        description='tinder app created with vanilla Js'
+        image='../assets/burger.jpg'
+        alt='tinder  project'
+      />
+      <Project
+        url='https://luyezhan.github.io/Code-Invader//'
+        description='mi first game using canvas and vanilla js'
+        image='../assets/burger.jpg'
+        alt='tinder  project'
+      />
     </div>
     <button onClick={() => Router.push('/auth')}>Go to Auth</button>
   </div>
@@ -87,7 +65,7 @@ const indexPage = (props) => (
 indexPage.getInitialProps = (context) => {
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve({ appName: 'Super App ' });
+      resolve({ appName: 'Lu Ye Zhan' });
     }, 1000);
   });
   return promise;
