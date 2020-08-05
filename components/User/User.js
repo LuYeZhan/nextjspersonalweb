@@ -5,6 +5,7 @@ const user = (props) => (
   <div>
     <h1>{props.name}</h1>
     <p>Age: {props.age}</p>
+    <p>Email: {props.email}</p>
     <style jsx>
       {`
         div {

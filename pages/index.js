@@ -10,42 +10,49 @@ const indexPage = (props) => (
     <h2>Projects</h2>
     <div className={classes.Container}>
       <Project
+        name='Burger App'
         url='https://react-my-burger-75352.web.app/'
-        description='My burger app, react, hooks, redux, firebase'
+        description='react, hooks, redux, firebase'
         image='../assets/burger.jpg'
         alt='burger project'
       />
       <Project
+        name='Natours App'
         url='https://luyezhan.github.io/Natours/'
-        description='Natours html + css'
+        description=' html + css'
         image='../assets/burger.jpg'
         alt='natours front project'
       />
       <Project
+        name='Natours Api'
         url='https://natours11api.herokuapp.com/'
-        description='Natours API Node.Js + PUG'
+        description=' Node.Js + PUG'
         image='../assets/burger.jpg'
         alt='natours Api project'
       />
       <Project
+        name='Kiwi-Me App'
         url='https://kiwi-me.firebaseapp.com/'
-        description='Kiwi hackaton React Hooks App with socket.io'
+        description='React Hooks App with socket.io'
         image='../assets/burger.jpg'
         alt='Kiwi project'
       />
       <Project
+        name='Tomeu bnb app'
         url='https://tomeu.herokuapp.com/'
-        description='Tomeu Node.Js express handlebar'
+        description=' NodeJs express handlebar'
         image='../assets/burger.jpg'
         alt='Tomeu project'
       />
       <Project
+        name='Social Network App'
         url='https://listenandtalk-a3074.firebaseapp.com/'
-        description='Listen and Talk MERN Stack social network using sound only'
+        description='MERN Stack '
         image='../assets/burger.jpg'
         alt='listen & talk  project'
       />
       <Project
+        name='My tinder app'
         url='https://luyezhan.github.io/Loveweb/'
         description='tinder app created with vanilla Js'
         image='../assets/burger.jpg'
@@ -53,12 +60,12 @@ const indexPage = (props) => (
       />
       <Project
         url='https://luyezhan.github.io/Code-Invader//'
-        description='mi first game using canvas and vanilla js'
+        description=' canvas and vanilla js'
         image='../assets/burger.jpg'
-        alt='tinder  project'
+        alt='Game project'
       />
     </div>
-    <button onClick={() => Router.push('/auth')}>Go to Auth</button>
+    <button onClick={() => Router.push('/contact')}>Contact me</button>
   </div>
 );
 
