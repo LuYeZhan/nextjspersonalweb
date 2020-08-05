@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Project.module.css';
 
-const user = (props) => (
+const project = (props) => (
   <figure className={classes.Figure}>
     <h3 className={classes.Title}>{props.name}</h3>
     <a className={classes.Anchor} href={props.url}>
@@ -11,4 +11,4 @@ const user = (props) => (
   </figure>
 );
 
-export default user;
+export default project;

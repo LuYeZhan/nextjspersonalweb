@@ -2,7 +2,21 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
-  background-color: white;
+  background-color: #fff;
   padding: 10px;
   flex-wrap: wrap;
+}
+
+.Title {
+  text-align: center;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Ul {
+  display: flex;
+  list-style-type: none;
 }
