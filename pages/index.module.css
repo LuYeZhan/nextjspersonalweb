@@ -9,6 +9,7 @@
 
 .Title {
   text-align: center;
+  margin: 1em;
 }
 
 .Header {
@@ -19,4 +20,31 @@
 .Ul {
   display: flex;
   list-style-type: none;
+}
+
+.FlexContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#__next {
+  padding: 5rem;
+}
+
+.Img {
+  width: 100%;
+  border: 4px solid black;
+  border-radius: 4px;
+}
+
+.FooterContainer {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.Anchor {
+  text-decoration: none;
+  color: black;
 }

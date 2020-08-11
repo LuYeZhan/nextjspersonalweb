@@ -1,0 +1,14 @@
+.Title {
+  text-align: center;
+  margin: 1em;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Ul {
+  display: flex;
+  list-style-type: none;
+}

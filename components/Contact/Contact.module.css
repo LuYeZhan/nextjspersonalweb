@@ -1,0 +1,25 @@
+.Contact {
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.Input {
+  padding: 10px;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.Textarea {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 25rem;
+  margin: 1rem auto 1.5rem auto;
+}
+
+.FormContainer {
+  margin: 5rem;
+}
