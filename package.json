@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "prod:server": "cross-env NODE_ENV=production node server.js",
     "heroku-postbuild": "next build",
-    "start": "npm-run-all -s build "
+    "start": "npm-run-all -s build prod:server"
   },
   "author": "Lu Ye Zhan",
   "license": "ISC",
