@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Router from 'next/router';
 import classes from './index.module.css';
@@ -8,6 +8,19 @@ import FooterList from '../components/FooterList/FooterList.js';
 import Contact from '../components/Contact/Contact';
 
 function indexPage(props) {
+  const [project, setProject] = useState([
+    'react, hooks, redux, firebase',
+    'html + css',
+    ' Node.Js + PUG',
+    'React Hooks App with socket.io',
+    ' NodeJs express handlebar',
+    'MERN Stack ',
+    'tinder app created with vanilla Js',
+    ' canvas and vanilla js',
+  ]);
+
+  const [searched, setSearched] = useState(false);
+
   useEffect(() => {
     const background = document.getElementsByTagName('html')[0];
     background.style.backgroundColor = '#4a4f9b';
@@ -16,6 +29,16 @@ function indexPage(props) {
     const nextId = document.getElementById('__next');
     nextId.style.padding = '3rem';
   }, []);
+
+  // const searchHandler = (event) => {
+  //   const result = event.target.value;
+  //   const filteredProject = project.filter((p) =>
+  //     p.toLowerCase().includes(result)
+  //   );
+  //   setSearched(true);
+  //   console.log(filteredProject);
+  //   console.log(searched);
+  // };
 
   return (
     <>
@@ -68,65 +91,80 @@ function indexPage(props) {
         </p>
       </div>
       <h2 className={classes.ProjectTitle}>Projects</h2>
+      {/* <input
+        type='text'
+        defaultValue='search your project'
+        onChange={searchHandler}
+      /> */}
       <div className={classes.Container}>
+        {/* filter rendering */}
+        {/* {project.map((p) => {
+          <Project
+            name='Burger App'
+            url='https://react-my-burger-75352.web.app/'
+            description={project[0]}
+            image='../assets/burger.jpg'
+            alt='burger project'
+          />;
+        })} */}
         <Project
           name='Burger App'
           url='https://react-my-burger-75352.web.app/'
-          description='react, hooks, redux, firebase'
+          description={project[0]}
           image='../assets/burger.jpg'
           alt='burger project'
         />
         <Project
           name='Natours App'
           url='https://luyezhan.github.io/Natours/'
-          description=' html + css'
-          image='../assets/burger.jpg'
+          description={project[1]}
+          image='../assets/natours.png'
           alt='natours front project'
         />
         <Project
           name='Natours Api'
           url='https://natours11api.herokuapp.com/'
-          description=' Node.Js + PUG'
-          image='../assets/burger.jpg'
+          description={project[2]}
+          image='../assets/natoursapi.png'
           alt='natours Api project'
         />
         <Project
           name='Kiwi-Me App'
           url='https://kiwi-me.firebaseapp.com/'
-          description='React Hooks App with socket.io'
-          image='../assets/burger.jpg'
+          description={project[3]}
+          image='../assets/kiwi.png'
           alt='Kiwi project'
         />
         <Project
           name='Tomeu bnb app'
           url='https://tomeu.herokuapp.com/'
-          description=' NodeJs express handlebar'
-          image='../assets/burger.jpg'
+          description={project[4]}
+          image='../assets/tomeu.png'
           alt='Tomeu project'
         />
         <Project
           name='Social Network App'
           url='https://listenandtalk-a3074.firebaseapp.com/'
-          description='MERN Stack '
-          image='../assets/burger.jpg'
+          description={project[5]}
+          image='../assets/listenandtalk.png'
           alt='listen & talk  project'
         />
         <Project
           name='My tinder app'
           url='https://luyezhan.github.io/Loveweb/'
-          description='tinder app created with vanilla Js'
-          image='../assets/burger.jpg'
+          description={project[6]}
+          image='../assets/loveapp.png'
           alt='tinder  project'
         />
         <Project
           url='https://luyezhan.github.io/Code-Invader//'
-          description=' canvas and vanilla js'
-          image='../assets/burger.jpg'
+          description={project[7]}
+          image='../assets/codeinvader.png'
           alt='Game project'
         />
       </div>
 
-      <Contact id='contact' />
+      <Contact />
 
       <footer className={classes.FooterContainer}>
         <FooterList
