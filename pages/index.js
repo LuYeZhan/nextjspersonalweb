@@ -160,7 +160,7 @@ function indexPage(props) {
           url='https://luyezhan.github.io/Code-Invader//'
           description={project[7]}
           image='../assets/codeinvader.png'
-          alt='Game project'
+          alt='Game project '
         />
       </div>
 
