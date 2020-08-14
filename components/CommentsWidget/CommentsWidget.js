@@ -16,6 +16,8 @@ class CommentsWidget extends Component {
       encrypted: true,
     });
 
+    console.log(this.pusher);
+
     this.channel = this.pusher.subscribe('post-comments');
 
     this.channel.bind('new-comment', ({ comment = null }) => {
