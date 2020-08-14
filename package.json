@@ -7,7 +7,7 @@
     "dev": " node server.js",
     "build": "next build",
     "prod:server": "cross-env NODE_ENV=production node server.js",
-    "start": "next start -p $PORT -s build prod:server",
+    "start": "next start -p $PORT build prod:server",
     "heroku-postbuild": "next build"
   },
   "author": "Lu Ye Zhan",
