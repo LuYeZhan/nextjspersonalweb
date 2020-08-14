@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next node server.js",
+    "dev": "next",
     "build": "next build",
-    "prod:server": "cross-env NODE_ENV=production node server.js",
     "heroku-postbuild": "next build",
-    "start": "npm-run-all -s build prod:server"
+    "start": "npm-run-all -s build "
   },
   "author": "Lu Ye Zhan",
   "license": "ISC",
