@@ -35,11 +35,14 @@ function blog(props) {
         </nav>
       </header>
 
-      <section className='col-md-4 position-relative d-flex flex-wrap h-100 align-items-start align-content-between bg-light px-0'>
-        {post && <CommentsWidget />}
-      </section>
-
-      <section className='col-md-4 position-relative d-flex flex-wrap h-100 align-items-start align-content-between bg-light px-0'></section>
+      <main>
+        <section className={classes.Section}>
+          <div className={classes.Post}>{post}</div>
+          <div className={classes.Comments}>
+            <CommentsWidget />
+          </div>
+        </section>
+      </main>
     </>
   );
 }
