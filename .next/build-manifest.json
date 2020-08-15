@@ -1,7 +1,5 @@
 {
-  "polyfillFiles": [
-    "static/chunks/polyfills-b4c9a36a8d9b649404fa.js"
-  ],
+  "polyfillFiles": ["static/chunks/polyfills-b4c9a36a8d9b649404fa.js"],
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
