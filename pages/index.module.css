@@ -32,19 +32,26 @@
 }
 
 .Img {
-  width: 100%;
-  border: 4px solid black;
+  width: 55%;
   border-radius: 4px;
 }
 
 .FooterContainer {
   display: flex;
-  justify-content: center;
-  list-style-type: none;
-  text-decoration: none;
+  justify-content: space-evenly;
+  list-style: none;
 }
 
 .Anchor {
   text-decoration: none;
   color: black;
+}
+
+.About {
+  display: flex;
+  align-items: center;
+}
+
+.AboutContent {
+  padding: 3rem;
 }

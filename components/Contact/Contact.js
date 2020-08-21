@@ -23,6 +23,7 @@ const contact = (props) => (
         defaultValue='your comment'
         className={classes.Textarea}
       />
+      <button type='submit'>Submit</button>
     </form>
   </>
 );

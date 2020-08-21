@@ -4,11 +4,9 @@ import classes from './FooterList.module.css';
 const Footer = (props) => (
   <>
     <li className={classes.List}>
-      <p>
-        <a className={classes.Anchor} href={props.redirect}>
-          {props.footerContent}
-        </a>
-      </p>
+      <a className={classes.Anchor} href={props.redirect}>
+        <img src={props.icon} alt={props.alt} className={classes.Icon} />
+      </a>
     </li>
   </>
 );

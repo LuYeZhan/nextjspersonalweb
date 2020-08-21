@@ -52,61 +52,30 @@ function indexPage(props) {
           </ul>
         </nav>
       </header>
+
       <div id='about'>
-        <h2>About Lu</h2>
-        <img
-          className={classes.Img}
-          src='../assets/personal.jpeg'
-          alt='photo of Lu'
-        />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt
-          delectus porro aliquid, doloribus quo et! Autem, magni, dicta ab
-          beatae sint suscipit facilis eveniet consectetur assumenda provident
-          incidunt quo.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt
-          delectus porro aliquid, doloribus quo et! Autem, magni, dicta ab
-          beatae sint suscipit facilis eveniet consectetur assumenda provident
-          incidunt quo.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt
-          delectus porro aliquid, doloribus quo et! Autem, magni, dicta ab
-          beatae sint suscipit facilis eveniet consectetur assumenda provident
-          incidunt quo.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt
-          delectus porro aliquid, doloribus quo et! Autem, magni, dicta ab
-          beatae sint suscipit facilis eveniet consectetur assumenda provident
-          incidunt quo.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt
-          delectus porro aliquid, doloribus quo et! Autem, magni, dicta ab
-          beatae sint suscipit facilis eveniet consectetur assumenda provident
-          incidunt quo.
-        </p>
+        <h2 className={classes.Title}>About Lu</h2>
+        <div className={classes.About}>
+          <p className={classes.AboutContent}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+            deserunt delectus porro aliquid, doloribus quo et! Autem, magni,
+            dicta ab beatae sint suscipit facilis eveniet consectetur assumenda
+            provident incidunt quo. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Amet deserunt delectus porro aliquid, doloribus
+            quo et! Autem, magni, dicta ab beatae sint suscipit facilis eveniet
+            consectetur assumenda provident incidunt quo.
+          </p>
+
+          <img
+            className={classes.Img}
+            src='../assets/personal.jpeg'
+            alt='photo of Lu'
+          />
+        </div>
       </div>
-      <h2 className={classes.ProjectTitle}>Projects</h2>
-      {/* <input
-        type='text'
-        defaultValue='search your project'
-        onChange={searchHandler}
-      /> */}
+      <h2 className={classes.Title}>Projects</h2>
+
       <div className={classes.Container}>
-        {/* filter rendering */}
-        {/* {project.map((p) => {
-          <Project
-            name='Burger App'
-            url='https://react-my-burger-75352.web.app/'
-            description={project[0]}
-            image='../assets/burger.jpg'
-            alt='burger project'
-          />;
-        })} */}
         <Project
           name='Burger App'
           url='https://react-my-burger-75352.web.app/'
@@ -125,7 +94,7 @@ function indexPage(props) {
           name='Natours Api'
           url='https://natours11api.herokuapp.com/'
           description={project[2]}
-          image='../assets/natoursapi.png'
+          image='../assets/natoursApi.png'
           alt='natours Api project'
         />
         <Project
@@ -168,29 +137,20 @@ function indexPage(props) {
 
       <footer className={classes.FooterContainer}>
         <FooterList
-          footerContent='Github'
+          icon='../icons/githubicon.png'
           redirect='https://github.com/luyezhan'
         />
         <FooterList
-          footerContent='Linkedin'
+          icon='../icons/linkedinicon.png'
           redirect='https://www.linkedin.com/in/luyezhan/'
         />
         <FooterList
-          footerContent='Instagram'
+          icon='../icons/InstagramIcon.png'
           redirect='https://www.instagram.com/luyezhan/'
         />
       </footer>
     </>
   );
 }
-
-// indexPage.getInitialProps = (context) => {
-//   const promise = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve({ appName: 'Lu Ye Zhan' });
-//     }, 1000);
-//   });
-//   return promise;
-// };
 
 export default indexPage;
