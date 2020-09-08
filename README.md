@@ -10,4 +10,4 @@ Layout
 NavList
 Project
 
-It uses react css styled component
+It uses react css modules
