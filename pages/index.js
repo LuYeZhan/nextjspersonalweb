@@ -30,6 +30,7 @@ function indexPage(props) {
     nextId.style.padding = '3rem';
   }, []);
 
+  // this is the awfull code for the searcher component
   // const searchHandler = (event) => {
   //   const result = event.target.value;
   //   const filteredProject = project.filter((p) =>
@@ -43,10 +44,10 @@ function indexPage(props) {
   return (
     <>
       <header className={classes.Header}>
-        <h1 className={classes.Title}>Lu Ye Zhan's personal page</h1>
+        <h1 className={classes.Title}>Code Mentors</h1>
         <nav>
           <ul className={classes.Ul}>
-            <NavList navContent='About Lu' href='' link='#about' />
+            <NavList navContent='About Code Mentors' href='' link='#about' />
             <NavList navContent='Contact' href='' link='#contact' />
             <NavList navContent='Blog' href='' link='/blog' />
           </ul>
@@ -54,25 +55,27 @@ function indexPage(props) {
       </header>
 
       <div id='about'>
-        <h2 className={classes.Title}>About Lu</h2>
         <div className={classes.About}>
           <p className={classes.AboutContent}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-            deserunt delectus porro aliquid, doloribus quo et! Autem, magni,
-            dicta ab beatae sint suscipit facilis eveniet consectetur assumenda
-            provident incidunt quo. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Amet deserunt delectus porro aliquid, doloribus
-            quo et! Autem, magni, dicta ab beatae sint suscipit facilis eveniet
-            consectetur assumenda provident incidunt quo.
+            Do you wanna change career? Become a developer. Are you struggling
+            with your project and searching for help. Wanna improve your code
+            and don't know how? Here at Code Mentor you will find a mentor to
+            help you with all of this and much more.
           </p>
 
           <img
             className={classes.Img}
-            src='../assets/personal.jpeg'
-            alt='photo of Lu'
+            src='../assets/mentorship.jpg'
+            alt='photo of code mentors'
           />
         </div>
       </div>
+
+      <div>
+        <h2 className={classes.Title}>How it works?</h2>
+        <div className={classes.Blank}></div>
+      </div>
+
       <h2 className={classes.Title}>Projects</h2>
 
       <div className={classes.Container}>

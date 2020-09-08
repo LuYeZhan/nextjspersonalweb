@@ -3,7 +3,6 @@ import classes from './Blog.module.css';
 import NavList from '../../components/NavList/NavList';
 import axios from 'axios';
 import Layout from '../../components/Layout/Layout';
-import CommentsWidget from '../../components/CommentsWidget/CommentsWidget';
 
 function blog(props) {
   const [post, setPost] = useState(null);
@@ -39,7 +38,7 @@ function blog(props) {
         <section className={classes.Section}>
           <div className={classes.Post}>{post}</div>
           <div className={classes.Comments}>
-            <CommentsWidget />
+            <p>This is the comment section</p>
           </div>
         </section>
       </main>
