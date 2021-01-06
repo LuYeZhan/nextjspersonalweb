@@ -13,7 +13,7 @@
   "author": "Lu Ye Zhan",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-plugin-import-static-files": "^1.0.4",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -32,7 +32,7 @@
     "sentiment": "^5.0.2"
   },
   "devDependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "cross-env": "^7.0.2",
